@@ -1,0 +1,23 @@
+<li id="task-<%= task.id %>">
+	<%= form_for task, remote: true do |f| %>
+		<%= f.hidden_field :position %>
+		<div class="tabl">
+			<div class="cell auto middle to-complete">
+				<%= f.check_box :complete %>
+			</div>
+			<div class="cell">
+				<%= f.text_field :name, id: "taskfield-#{task.id}", class: "form-control", required: true %>
+			</div>
+			<div class="cell auth middle text-right task-controls">
+				<i class="fa fa-arrows-v"></i>
+				<label class="pointer" for="taskfield-<%= task.id %>">
+					<i class="fa fa-pencil"></i>
+				</label>
+				<%= link_to task, method: :delete, remote: :true do %>
+					<i class="fa fa-trash"></i>
+				<% end %>
+			</div>
+		</div>
+	<% end %>
+</li>
+

@@ -1,0 +1,4 @@
+(function(){
+	$("<%= escape_javascript(render('lists/list', list: @list)) %>").appendTo("#lists")
+	$("#add-new-list-field").val("");
+})();

@@ -1,0 +1,4 @@
+(function(){
+	$("<%= escape_javascript(render('lists/task', task: @task)) %>").prependTo("#list-<%= @task.list.id	%> ul.tasks")
+	$("#list-<%= @task.list.id %> .add-task-inp").val('');
+})();

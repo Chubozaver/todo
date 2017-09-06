@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: password
+
+development:
+  <<: *default
+  database: garage-task_development
+
+test:
+  <<: *default
+  database: garage-task_test
+
+production:
+  <<: *default
+  database: garage-task_production
+  username: garage-task
+  password: <%= ENV['GARAGE-TASK_DATABASE_PASSWORD'] %>

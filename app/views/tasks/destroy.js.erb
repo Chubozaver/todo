@@ -1,0 +1,5 @@
+(function(){
+	if ($("#task-<%= @task.id %>").length){
+		$("#task-<%= @task.id %>").remove();
+	}
+})();
