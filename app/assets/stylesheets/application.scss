@@ -3,219 +3,219 @@
 
 // general
 html, body {
-	display: block;
-	float: left;
-	width: 100%;
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
-	position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 body {
-	background-image: linear-gradient(to bottom, #cfcdac, #bc840e);
+  background-image: linear-gradient(to bottom, #cfcdac, #bc840e);
 }
 .tabl {
-	display: table;
-	width: 100%;
+  display: table;
+  width: 100%;
 }
 .cell {
-	display: table-cell;
-	width: 100%;
-	vertical-align: top;
+  display: table-cell;
+  width: 100%;
+  vertical-align: top;
 }
 .cell.auto {
-	width: 30px;
+  width: 30px;
 }
 .cell-.middle {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 .pointer {
-	cursor: pointer;
+  cursor: pointer;
 }
 .nowrap {
-	white-space: nowrap;
+  white-space: nowrap;
 }
 form {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 #greeting {
-	text-transform: uppercase;
-	padding-bottom: 30px;
-	text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  text-align: center;
 }
 .copytext {
-	color: white;
-	text-align: center;
+  color: white;
+  text-align: center;
 }
 
 //lists
 
 .list {
-	margin-bottom: 30px;
-	border-bottom-left-radius: 8px;
-	border-bottom-right-radius: 8px;
-	overflow: hidden;
-	box-shadow: 0 7px 9px rgba(0, 0, 0, 0.2);
-	border: 1px solid #777;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 7px 9px rgba(0, 0, 0, 0.2);
+  border: 1px solid #777;
 }
 .list-calendar {
-	margin-right: 15px;
-	color: #22344f;
+  margin-right: 15px;
+  color: #22344f;
 }
 .list .header {
-	background-image: linear-gradient(to bottom, #4a7cb9, #3561a2);
-	font-size: 18px;
-	color: white;
-	padding: 10px 15px;
-	box-shadow: inset 0 0 0 1px #7596C4;
-	line-height: 1.85;
+  background-image: linear-gradient(to bottom, #4a7cb9, #3561a2);
+  font-size: 18px;
+  color: white;
+  padding: 10px 15px;
+  box-shadow: inset 0 0 0 1px #7596C4;
+  line-height: 1.85;
 }
 .list .header .form-control {
-	margin: 0;
-	padding: 0;
-	font-size: 18px;
-	background: transparent;
-	border: 0;
-	box-shadow: none;
-	color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: rgba(255, 255, 255, 0.8);
 }
 .list .header .form-control:focus {
-	color: white;
+  color: white;
 }
 .header-controls {
-	white-space: nowrap;
-	vertical-align: middle;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 .header-controls .fa {
-	display: inline-block;
-	vertical-align: middle;
-	color: rgba(255, 255, 255, 0.3);
-	margin-left: 8px;
-	cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 0.3);
+  margin-left: 8px;
+  cursor: pointer;
 }
 .header-controls .fa:hover {
-	color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 .create-task-form {
-	padding: 10px;
-	background-image: linear-gradient(to bottom, #e1e1e3, #cdcdcd);
+  padding: 10px;
+  background-image: linear-gradient(to bottom, #e1e1e3, #cdcdcd);
 }
 .create-task-form .add-icon {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 .create-task-form .add-icon i {
-	display: inline-block;
-	vertical-align: middle;
-	font-size: 200%;
-	padding: 0 9px 0 0;
-	color: #57956e;
-	line-height: 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 200%;
+  padding: 0 9px 0 0;
+  color: #57956e;
+  line-height: 0;
 }
 
 .add-new-list {
-	clear: both;
-	padding-bottom: 30px;
-	text-align: center;
+  clear: both;
+  padding-bottom: 30px;
+  text-align: center;
 }
 .add-new-list .contain {
-	width: 100%;
-	text-align: left;
-	display: inline-block;
-	max-width: 600px;
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  max-width: 600px;
 }
 .add-new-list .contain .fa-plus {
-	display: inline-block;
-	margin-right: 8px;
+  display: inline-block;
+  margin-right: 8px;
 }
 .add-new-list .contain .form-control {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 
 
 // tasks
 .tasks {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	border: 1px solid #eaeaea;
-	border-bottom: 0;
-	border-bottom-left-radius: 8px;
-	border-bottom-right-radius: 8px;
-	background: #eee;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #eaeaea;
+  border-bottom: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #eee;
 }
 .to-complete {
-	position: relative;
-	padding: 0 18px 0 8px;
-	vertical-align: middle;
+  position: relative;
+  padding: 0 18px 0 8px;
+  vertical-align: middle;
 }
 .to-complete:after {
-	content: '';
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	width: 5px;
-	border-style: none solid;
-	border-width: 1px;
-	border-color: #eaeaea;
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  border-style: none solid;
+  border-width: 1px;
+  border-color: #eaeaea;
 }
 .tasks li {
-	display: block;
-	clear: both;
-	overflow: hidden;
-	border-bottom: 1px solid #eaeaea;
-	background: white;
-	padding: 0 10px;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  border-bottom: 1px solid #eaeaea;
+  background: white;
+  padding: 0 10px;
 }
 .tasks li .form-control {
-	border: 0;
-	box-shadow: none;
-	border-radius: 0;
-	color: #959595;
-	background: transparent;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  color: #959595;
+  background: transparent;
 }
 .tasks li .form-control:focus {
-	color: black;
+  color: black;
 }
 .tasks li:last-child {
-	border-bottom-left-radius: 8px;
-	border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .task-controls {
-	white-space: nowrap;
-	opacity: 0;
-	position: relative;
-	padding-left: 10px;
-	vertical-align: middle;
-	padding-top: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  position: relative;
+  padding-left: 10px;
+  vertical-align: middle;
+  padding-top: 3px;
 }
 .tasks li:hover .task-controls,
 .tasks li.active .task-controls {
-	opacity: 1;
+  opacity: 1;
 }
 .task-controls:after {
-	content: '';
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 5px;
-	border-style: none solid;
-	border-width: 1px;
-	border-color: #eaeaea;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  border-style: none solid;
+  border-width: 1px;
+  border-color: #eaeaea;
 }
 .task-controls .fa {
-	display: inline-block;
-	padding: 0 8px;
-	border-right: 1px solid #eaeaea;
-	color: #9d9b8c;
-	vertical-align: middle;
+  display: inline-block;
+  padding: 0 8px;
+  border-right: 1px solid #eaeaea;
+  color: #9d9b8c;
+  vertical-align: middle;
 }
 .tasks .task-controls .fa:last-child {
-	border-right: none;
+  border-right: none;
 }
 

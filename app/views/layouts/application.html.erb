@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>GarageTask</title>
-		<%= csrf_meta_tags %>
-		<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-	</head>
+  <head>
+    <title>GarageTask</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-	<body>
-		<div class='container'>
-			<% flash.each do |type, message| %>
-				<div class="alert alert-<%= type %> fade in">
-					<button class="close" data-dismiss="alert">×</button>
-					<%= message %>
-				</div>
-			<% end %>
-			<div id='greeting'>
-				<h1>Simple Todo List</h1>
-				<h3>From RubyGarage</h3>
-			</div>
-			<%= yield %>
-			<div class='copytext'>&copy; RubyGarage</div>
-		</div>
-	</body>
+  <body>
+    <div class='container'>
+      <% flash.each do |type, message| %>
+        <div class="alert alert-<%= type %> fade in">
+          <button class="close" data-dismiss="alert">×</button>
+          <%= message %>
+        </div>
+      <% end %>
+      <div id='greeting'>
+        <h1>Simple Todo List</h1>
+        <h3>From RubyGarage</h3>
+      </div>
+      <%= yield %>
+      <div class='copytext'>&copy; RubyGarage</div>
+    </div>
+  </body>
 </html>

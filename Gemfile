@@ -19,7 +19,7 @@ gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
-gem 'cancancan'
+gem 'cancancan', '~> 2.0'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 
 group :development, :test do
