@@ -1,52 +1,52 @@
 <% if list.id %>
-	<div class="list" id="list-<%= list.id %>">
-		<div class="header">
-			<%= form_for list, remote: :true do |f| %>
-				<div class="tabl">
-					<div class="cell auto middle">
-						<i class="fa fa-calendar list-calendar"></i>
-					</div>
-					<div class="cell middle">
-						<%= f.text_field :name, class: "form-control", id: "fill-name-#{list.id}" %>
-					</div>
-					<div class="call header-controls middle">
-						<label for="fill-name-<%= list.id %>">
-							<i class="fa fa-pencil"></i>
-						</label>
-						<%= link_to list, method: :delete, remote: :true do %>
-							<i class="fa fa-trash"></i>
-						<% end %>
-					</div>
-				</div>
-			<% end %>
-		</div>
-		<div class="create-task-form">
-			<%= form_for list.tasks.new, remote: true do |f| %>
-				<div class="tabl">
-					<div class="cell auto add-icon">
-						<i class="fa fa-plus"></i>
-					</div>
-					<div class="cell">
-						<%= f.hidden_field :list_id, value: list.id %>
-						<%= f.hidden_field :position, value: 1 %>
-						<div class="input-group tabl">
-							<%= f.text_field :name, class: "form-control add-task-inp", required: true, placeholder: "Start typing here to create a task" %>
-							<span class="input-group-btn">
-								<button class="btn btn-success" type="submit">Add Task</button>
-							</span>
-						</div>
-					</div>
-				</div>
-			<% end %>
-		</div>
-		<div class="clearfix">
-			<ul class="tasks">
-				<% list.tasks.order(position: :asc).each_with_index do |task, i| %>
-					<% if task.id %>
-						<%= render "task", task: task %>
-					<% end %>
-				<% end %>
-			</ul>
-		</div>
-	</div>
+  <div class="list" id="list-<%= list.id %>">
+    <div class="header">
+      <%= form_for list, remote: :true do |f| %>
+        <div class="tabl">
+          <div class="cell auto middle">
+            <i class="fa fa-calendar list-calendar"></i>
+          </div>
+          <div class="cell middle">
+            <%= f.text_field :name, class: "form-control", id: "fill-name-#{list.id}" %>
+          </div>
+          <div class="call header-controls middle">
+            <label for="fill-name-<%= list.id %>">
+              <i class="fa fa-pencil"></i>
+            </label>
+            <%= link_to list, method: :delete, remote: :true do %>
+              <i class="fa fa-trash"></i>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="create-task-form">
+      <%= form_for list.tasks.new, remote: true do |f| %>
+        <div class="tabl">
+          <div class="cell auto add-icon">
+            <i class="fa fa-plus"></i>
+          </div>
+          <div class="cell">
+            <%= f.hidden_field :list_id, value: list.id %>
+            <%= f.hidden_field :position, value: 1 %>
+            <div class="input-group tabl">
+              <%= f.text_field :name, class: "form-control add-task-inp", required: true, placeholder: "Start typing here to create a task" %>
+              <span class="input-group-btn">
+                <button class="btn btn-success" type="submit">Add Task</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="clearfix">
+      <ul class="tasks">
+        <% list.tasks.order(position: :asc).each_with_index do |task, i| %>
+          <% if task.id %>
+            <%= render "task", task: task %>
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 <% end %>
